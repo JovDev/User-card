@@ -1,0 +1,175 @@
+:root{
+    --background-image:linear-gradient( 65deg, #ff3867 ,  #ffc873, #ff3867);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src:
+      url(montserrat-vf.woff2) format("woff2 supports variations"),
+      url(montserrat-vf.woff2) format("woff2-variations");  /* Obsoleta */
+    font-weight: 100 900;
+    font-stretch: 50% 200%;
+  }
+
+body{
+    background-image: var(--background-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    width:100vw;
+}
+
+.card{
+    width: 450px;
+    height:600px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    box-shadow: 1px 1px 39px 1px rgba(150,137,137,0.75) inset;
+        -webkit-box-shadow: 1px 1px 39px 1px rgba(150,137,137,0.85) inset;
+        -moz-box-shadow: 1px 1px 39px 1px rgba(150,137,137,0.85) inset;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+.fondo{
+    max-height: 200px;
+    height: 150px;
+    background-image: linear-gradient(125deg, 
+    rgba(0, 0, 0, 0.336),
+    rgba(188, 101, 214, 0.123),
+    rgba(188, 101, 214, 0.336),
+    rgb(225, 1, 255))
+    ,url(assets/jose-gil-2pNdTBn4C7U-unsplash.jpg);
+    background-size: cover;
+    overflow: auto;
+    position: relative;
+}
+
+.linea{
+    border-top: 3px solid  #d37ec6;
+    height: 2px;
+    padding: 0;
+    margin:0;
+}
+
+.hero-image{
+    width: 128px;
+    height: 128px;
+    margin: 0px 150px;
+    background-image: url(assets/avatar-svgrepo-com.svg);
+    border: 3px  #d37ec6 solid;
+    border-radius: 90px;
+    position:absolute;
+    top: 50px;
+    margin-bottom: 20px;
+}
+
+.card-content{
+    text-align: center;
+    align-items: center;
+    margin: 40px 70px 30px;
+}
+
+.card-content p{
+    padding-top: 10px;
+    text-align: left;
+    color: lightslategray;
+    font-size: small;
+}
+
+.ubicacion{
+    text-align: center;
+    font-style: italic;
+    color:  #a05d5d;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+}
+.svg-icon{
+    width: 1vw;
+    padding-right: 2px;
+    fill: currentColor !important;
+}
+
+button{
+    width: 50%;
+    height: 30px;
+    border: 2px  #2d7cbf solid;
+    border-radius: 15px;
+    color:  #2d7cbf;
+    font-weight: bold;
+    background-color: white;
+    margin-top: 30px;
+}
+
+button:hover{
+    width: 50%;
+    height: 30px;
+    border: 2px  #2d7cbf solid;
+    border-radius: 15px;
+    color:  #2d7cbf ;
+    font-weight: bold;
+    background-color: white;
+    margin-top: 30px;
+    box-shadow: 1px 1px 39px 1px rgba(150,137,137,0.75);
+}
+
+button:active{
+    width: 50%;
+    height: 30px;
+    border: 2px  #2d7cbf solid;
+    border-radius: 15px;
+    color:  white;
+    font-weight: bold;
+    background-color: #2d7cbf ;
+    margin-top: 30px;
+}
+
+.footer {
+    display: flex; 
+    flex: 1;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.dato{   
+    border:1px lightslategray solid;
+    width: 100%; 
+    color:lightslategray;
+}
+
+.dato:first-child{
+    border-style:solid solid none none;
+}
+.dato:nth-child(2){
+    border-style:solid solid none none  ;
+}
+.dato:nth-child(3){
+    border-style:solid none none none  ;
+}
+
+.dato .svg-icon{
+    height: 2.5vh;
+    width: 2vw;
+    fill: currentColor !important;
+}
+
+.dato p{
+    font-size:small;
+    margin: 5px 0px;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: medium;
+    position: relative;
+    bottom:4px;
+}
